@@ -1,0 +1,40 @@
+.border {
+  border: 1px solid #ffeee6;
+}
+* {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #4d1a00;
+}
+#wrapper {
+  min-width: 320px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  color: #ffeee6;
+  margin-top: 30px;
+}
+#table {
+  color: #ffeee6;
+  margin: 30px;
+  text-align: center;
+  border: 1px solid #ffeee6;
+}
+#table .table-row {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  padding: 10px;
+}
+#table .days-col {
+  display: flex;
+}
+#table .days-col div {
+  flex: 1 1 0;
+  padding: 2.5px;
+  border: 1px solid #ffeee6;
+}
