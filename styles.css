@@ -1,8 +1,6 @@
-.border {
-  border: 1px solid #ffeee6;
-}
 * {
   margin: 0;
+  padding: 0;
   font-family: 'Josefin Sans', sans-serif;
   box-sizing: border-box;
 }
@@ -16,25 +14,51 @@ body {
 }
 h1 {
   text-align: center;
-  color: #ffeee6;
-  margin-top: 30px;
+  color: #ffffff;
+  margin: 50px 0;
 }
 #table {
-  color: #ffeee6;
-  margin: 30px;
+  width: 75%;
+  margin: 0 auto;
+  color: #ffffff;
   text-align: center;
-  border: 1px solid #ffeee6;
+  font-size: 125%;
+}
+#table #table-row-head {
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #4d1a00;
+  border: none;
+  padding: 7.5px 0;
+  border-radius: 40px 0;
 }
 #table .table-row {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  padding: 10px;
+  border-bottom: 2.5px solid #ffffff;
 }
-#table .days-col {
+#table .table-col-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2.5px solid #ffffff;
+}
+#table .table-col-days {
   display: flex;
 }
-#table .days-col div {
+#table .table-col-days div {
   flex: 1 1 0;
-  padding: 2.5px;
-  border: 1px solid #ffeee6;
+  margin: 10px auto;
+}
+#table .table-col-days div input {
+  font-size: 200%;
+}
+#table .table-col-days-missed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 2.5px solid #ffffff;
+}
+#table :last-child {
+  border-bottom: none;
 }
